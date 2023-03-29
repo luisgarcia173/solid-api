@@ -21,17 +21,17 @@ export class CreateUserUseCase {
 
     await this.usersRepository.save(user);
 
-    this.mailProvider.sendMail({
-      to: {
-        name: data.name,
-        email: data.email
-      },
-      from: {
-        name: '[App] New User Created',
-        email: 'no-reply@app.com'
-      },
-      subject: 'Your are welcome',
-      body: '<p>You already can login to our platform.</p>'
-    });
+    // await this.mailProvider.sendMail({
+    //   to: {
+    //     name: data.name,
+    //     email: data.email
+    //   },
+    //   from: {
+    //     name: '[App] New User Created',
+    //     email: 'no-reply@app.com'
+    //   },
+    //   subject: 'Your are welcome',
+    //   body: '<p>You already can login to our platform.</p>'
+    // });
   }
 }
