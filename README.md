@@ -10,7 +10,7 @@ Using unit tests
 yarn init -y
 yarn add express
 yarn add @types/express -D
-yard add typescript ts-node-dev -D
+yarn add typescript ts-node-dev -D
 yarn add nodemon -D
 yarn tsc --init
 
